@@ -1,0 +1,103 @@
+<!-- form elements -->
+<!-- 
+1.Name Box
+2.Email Box
+3.Number Box (Spin Control)
+4.phone Number Box
+5.Check Box
+6,Submit Button
+7.Radio Button
+8.Search Box
+9.Upload Button
+10.Reset Button
+11.Color pallet
+12.Range button
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- to give boarder for form -->
+    <fieldset>
+        <!-- to define the form -->
+        <form>
+            <!-- to display the header -->
+            <h1>Welcome to Navdisha, Please fill out below given form...!</h1>
+            <!-- to give horizontal line -->
+            <hr />
+            <!-- to define the label name -->
+            <label>Name:</label>
+            <!-- to define input text field -->
+            <input type="text" required placeholder="Enter Your Name" pattern="[a-zA-Z]{5,15}"
+                title="Check your name again..!" />
+            <!-- to define break line -->
+            <br /><br />
+            <!-- to define number spin  -->
+            <label>Age:</label>
+            <input type="number" min="19" max="30" placeholder="Enter Your Age"
+                title="Please enter your age given range" required />
+            <p>The Age should be between 19 to 30</p>
+            <br>
+            <!-- to define number  -->
+            <label>Mobile Number:</label>
+            <input type="text" required title=" Please check your number once..!" placeholder="Enter Your Mobile Number"
+                pattern="^[7-9]{1}[0-9]{9}$" />
+            <br /><br />
+            <!-- to define email text field -->
+            <label>Email:</label>
+            <input type="email" required placeholder="Enter Your Email" title="Check your emeail once..!"
+                pattern="[a-zA-Z0-9@]+@[a-zA-Z]+.[a-zA-Z]{2,3}" />
+            <br /><br />
+            <!-- to define checkbox fields -->
+            <label>Tech Skills:</label>
+            <input type="checkbox" /> Java <input type="checkbox" /> Selenium <input type="checkbox" /> SQL
+            <input type="checkbox" />API <input type="checkbox" /> Html <input type="checkbox" /> Appium
+            <br /> <br />
+            <!-- to define the radio button -->
+            <label for="">Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+            <br><br>
+            <!-- to define upload the file -->
+            <label>Upload Your File</label>
+            <input type="file">
+            <br><br>
+            <!-- to defile date calender -->
+            <label>Please Select Your Date Birth</label>
+            <input type="date" min="2019-01-01" max="2025-12-31">
+            <br><br>
+            <!-- to define the range button -->
+            <label>Range Button</label>
+            <input type="range">
+            <br><br>
+            <!-- to defile color pallet -->
+            <label>Color Pallet:</label>
+            <input type="color">
+            <br><br>
+            <!-- to define the select dropdown -->
+             <label>Select Your City:</label>
+             <select>
+                <option value="Select">Select City</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Gooty">Gooty</option>
+                <option value="Kadapa">Kadapa</option>
+                <option value="Anathapur">Ananthapur</option>
+             </select>
+             <br><br>
+             <!-- to define search bar -->
+              <label for="Search">Search For Book</label>
+              <input type="search" name="bookSearch" id="bookSearch">
+              <br><br>
+            <input type="submit" />
+            <br /><br />
+            <input type="reset" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
