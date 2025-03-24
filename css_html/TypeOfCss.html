@@ -1,0 +1,70 @@
+<!-- Css :
+  Css - cascading stylish sheet which is used to stylish the web pages
+  Type of css:
+    1.Inline Css
+    2.Internal Css
+    3.External Css
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Types of Css</title>
+   <link rel="stylesheet" href="TypeOfCssStyleShett.css">
+   <style>
+      h3 {
+         border: 2px solid aqua;
+         height: fit-content;
+         width: fit-content;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: medium;
+         color: cornflowerblue;
+         font-style: italic;
+         background-color: dimgray;
+         margin-left: 2px;
+         margin-right: 2px;
+      }
+
+      h1 {
+         border: 2px dotted rgb(116, 116, 226);
+         height: 45px;
+         width: 200px;
+         background-color: rgb(202, 243, 209);
+         border-radius: 5px;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- 1. Inline Css -->
+   <!-- if the properties are applicable for only specific element then that css we called as inline css
+          for inline css we use style key word as attribute in side the opening tag
+          eg: <p style = color : blue> Inline Css </p>  
+-->
+   <p style="color: cornflowerblue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifF;
+      font-size: medium; font-style: oblique; font-variant: inherit; font-variant-emoji: unicode; border: 2px ;">
+      I am writing code for inline css
+   </p>
+
+   <!-- 2.Internal Css -->
+   <!-- internal css is used for stylish specified elements in side html document
+     here style keyword is used as tag name. we can use it in head or inside the body.
+     eg: <style>
+         h3 { color : blue ; font-family : 'Lucida Sans'}
+         <style>
+     -->
+   <h3> I am using Internal Css for this content</h3>
+   <!-- for border -->
+   <h1>Login</h1>
+
+   <!-- 3.External Css-->
+   <!-- in external css, we write code different cs document and we do link css document to the  html document
+     eg : <link scr = "pathOfCssFile.css" rel ="stylesheet">
+    -->
+   <br><br>
+   <a>Submit</a>
+   <h5>Register</h5>
+</body>
+
+</html>
